@@ -7,7 +7,7 @@ var tempomosquito = 1500
 var nivel = document.location.search
 nivel = nivel.replace('?', '')
 
-
+//Tempo do jogo
 if (nivel === 'facil') {
 	//1500
 	tempomosquito = 1500
@@ -48,6 +48,7 @@ function posicaorandomica() {
 			   vidas++}
 	}
 
+	//Esse 90 evita dos mosquitos saírem da tela(evitando a barra de rolagem)
 	var valorX = Math.floor(Math.random() * largura) - 90
 	var valorY = Math.floor(Math.random() * altura) - 90
 
@@ -57,7 +58,7 @@ function posicaorandomica() {
 
 
 
-	//criação
+	//Criação
 
 	var mosquito = document.createElement('img')
 
