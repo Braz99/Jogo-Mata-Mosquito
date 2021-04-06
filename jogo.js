@@ -14,11 +14,11 @@ if (nivel === 'facil') {
 } 
 else if (nivel === 'medio') {
  //1000 
- tempomosquito = 1000
+ tempomosquito = 1200
 
 }
 else if (nivel === 'dificil') { //750 
-	tempomosquito = 750
+	tempomosquito = 900
 		 }
 
 function dimensao() {
