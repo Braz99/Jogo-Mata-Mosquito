@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mata Mosquito</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<link rel="stylesheet" type="text/css" href="folha_estilo.css">
+
+		<script>
+
+			function iniciarjogo() {
+				var valor = document.getElementById('dificuldade').value
+
+				if (valor === '') { alert('Selecione um nível!')
+									return false}
+
+				window.location.href = 'app.html?' + valor	
+			}
+			
+		</script>
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<img src="imagens/game.png" style="width: 70%;">
+
+			<select id="dificuldade">
+				<option value="">Selecionar um nível</option>
+				<option value="facil">Easy</option>
+				<option value="medio">Medium</option>
+				<option value="dificil">Hard</option>
+			</select>
+
+			<button onclick="iniciarjogo()" id="botao">Escolher</button>
+		</div>
+	</body>
+</html>

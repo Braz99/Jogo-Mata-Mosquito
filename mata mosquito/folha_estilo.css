@@ -1,0 +1,74 @@
+* { margin: 0; }
+
+html { cursor: url('imagens/mata_mosquito.png') 30 30, auto;
+	 }
+
+body { background: url('imagens/bg.jpg') no-repeat center fixed;
+	   background-size: cover; }
+
+
+#container { position: absolute;
+			 left: 25%;
+			 right: 25%;
+			 margin-top: 3%;
+			 display: flex;
+			 flex-direction: row;
+			 flex-wrap: wrap;
+			 justify-content: center; }
+
+
+
+#dificuldade { width: 70%;
+			  border-radius: 5px;
+			  padding: 10px 5px;
+			  text-align-last: center;
+			  box-sizing: border-box; }
+
+
+#botao { background-color: red;
+		 text-align: center;
+		 border: none;
+		 padding: 10px;
+		 box-sizing: border-box;
+		 border-radius: 10px;
+		 width: 70%;
+		 margin-top: 5px;
+		 color: white;
+ }
+
+
+
+
+.mosquito1 { width: 90px;
+			height: 90px; }
+
+.mosquito2 { width: 80px;
+			height: 80px; }
+
+
+.mosquito3 { width: 60px;
+			height: 60px; }
+
+
+.ladoa { transform: scaleX(1); }
+
+.ladoa { transform: scaleX(-1); }
+
+
+
+/*Painel */
+.painel { position: absolute;
+		  bottom: 0px;
+		  left: 0px;
+		  width: 190px;
+		  padding: 10px;
+		  background-color: #fff;
+		  opacity: 0.7;
+		  border-top: solid 1px #fff; }
+
+.coracao { float: left; }
+
+.cronometro { float: left;
+			  font-size: 20px;
+			  font-weight: bold; }
+
